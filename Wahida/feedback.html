@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width-device-width, initial-scale-1">
+        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="form.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+	    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/bootstrap.min.js">
+            function myMessage(){
+                alert("Thank You For Your Feedback! Have a nice day");
+            }
+        </script>
+
+        <title>Feedback Form</title>
+        <style>
+            body{
+                background-image: url("img/bgf.jfif");
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index2.html">Profile</a></li>
+                <li><a href="photo_Gallery.html">Gallery</a></li>
+                <li><a href="about_me.html">About</a></li>
+                <li><a href="feedback.html">Click Me</a></li>
+            </ul>
+        </header>
+        <br>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-md-8">
+                    <h1 class="text-center mt-5 font-weight-bold">Feedback</h1>
+                    <hr class="bg-white">
+                    <h6 class="text-center">Please Fill The Feedback Form Below:</h6>
+                    <h3 class="mt-4">How do you rate your overall experience?</h3>
+                    <form>
+                        <label class="radio-inline"><input type="radio" name="rate" value="verybad">Very Bad</label>
+                        <label class="radio-inline"><input type="radio" name="rate" value="bad">Bad</label>
+                        <label class="radio-inline"><input type="radio" name="rate" value="avr">Average</label>
+                        <label class="radio-inline"><input type="radio" name="rate" value="good">Good</label>
+                        <label class="radio-inline"><input type="radio" name="rate" value="verygood">Very Good</label>
+                </div>
+            </div>   
+            <div class="row">
+                <div class="col-md-2"></div>
+                <label class="col-md-4">Full Name* :<br>
+                    <input type="text" id="text" required="">
+                </label>
+                <label class="col-md-4">E-mail* :<br>
+                    <input type="text" id="text" required="" placeholder="example@gmail.com">
+                </label>
+            </div>
+            <div class="row">
+                <div class="col-md-2"></div>
+                <label class="col-md-4">Phone Number* :<br>
+                    <input type="number" id="text" required="" placeholder="+6011111111">
+                </label>
+                <label class="col-md-4">Age :<br>
+                    <input type="number" id="text">
+                </label>
+            </div>
+            <div class="row">
+                <div class="col-md-2"></div>
+                <label class="col-md-8">Message :<br>
+                    <textarea id="message" placeholder="Write your message here.." cols="48" rows="5"></textarea>
+                </label>
+            </div>
+            <div class="row">
+                <div class="col-md-2"></div>
+                <button  class="btn btn-primary" style="width: 53.5%; position: absolute; margin-left: 15%;" id="memo" onclick="myMessage()">Submit</button>
+            </div>
+                    </form>        
+        </div> 
+        <script>
+            
+        </script>     
+    </body>
+</html>
